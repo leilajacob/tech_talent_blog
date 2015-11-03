@@ -1,5 +1,10 @@
-<h1>New Post</h1>
 
-<%= render 'form' %>
+<div class="container">
+     <div id="well" class="well">
+     	<h1>New Post</h1>
+        <%= render 'form' %>
+        <%= link_to 'Back', posts_path %>
+      </div>
+</div>
 
-<%= link_to 'Back', posts_path %>
+

@@ -11,16 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: "form-comtrol" %>
   </div>
-  <div class="field">
-      <%= f.hidden_field :user_id, value: current_user.id %>
+  <div class="field form-group">
+      <%= f.hidden_field :user_id, value: current_user.id, class: "form-comtrol" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :blog_entry %><br>
-    <%= f.text_area :blog_entry %>
+    <%= f.text_area :blog_entry, class: "form-comtrol" %>
   </div>
   <div class="actions">
     <%= f.submit %>

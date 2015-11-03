@@ -1,22 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-
-  <h1>Listing Posts</h1>
+  <div id="well" class="well">
+  <h4 id="welcome">Welcome, <%= current_user.username %>!</h4>
   
   <% @posts.each do |post| %>
-        <tr>
-        <h1><%= post.title %></h1>
-        <p><%= post.user.email %></p>
+        <h2><%= post.title %></h2>
+        <p id="author"><%= post.user.email %></p>
         <div class="well">
-        <p><%= post.blog_entry %></p>
-        <p><%= link_to 'Show', post %></p>
-      </tr>
+        <p><%= post.blog_entry[0...1000] %></p>
+        <p id="more"><%= link_to 'READ MORE', post %></p>
       </div>
     <% end %>
   
 </div>
+</div>
 
-<br>
-
-<%= link_to 'New Post', new_post_path %>

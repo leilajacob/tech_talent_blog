@@ -17,7 +17,58 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#nav-text {
-	text-align: center;
-	vertical-align: center;
+#nav {
+	color: #FE2155;
+	background: black;
 }
+
+h1 {
+	font-family: "Lucida Console", monospace;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Lucida Console", monospace;
+	text-align: center;
+}
+
+#author {
+	font-family: "Lucida Console", monospace;
+	color: #F00D70;
+	text-align: center;
+}
+
+#welcome {
+	color: #F00D70;
+}
+
+#more {
+	font-family: "Lucida Console", monospace;
+	color: black;
+	text-align: center;
+}
+
+#well {
+	background-image: url("http://40.media.tumblr.com/52a662193fd692277f0f56790a454f68/tumblr_nwagz4XqW61txxec1o1_1280.jpg");
+}
+
+a:hover {
+	color: #F00D70;
+}
+
+i:hover {
+	color: #F00D70;
+}
+
+a:hover {
+	float: center;
+	color: #F00D70;
+}
+
+#background {
+	background-color: #7B7878;
+}
+
+.navbar .nav > li > a {
+      padding:15px 10px 15px
+    }

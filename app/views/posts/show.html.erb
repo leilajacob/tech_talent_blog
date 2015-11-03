@@ -1,6 +1,10 @@
+<div class="container">
+     <div id="well" class="well">
+
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="well">
+  <p>
   <strong>Title:</strong>
   <%= @post.title %>
 </p>
@@ -22,6 +26,7 @@
 </p>
 <% end %>
 
+</div>
 
 <p>
 	<%= render 'comments/form' %>
@@ -29,11 +34,17 @@
 
 <p>
 	<% @post.comments.each do |comment| %>
+  <div class="well">
 		<%= comment.user.email %> said... 
 		<%= comment.comment_entry %>
+  </div>
 	<% end %>
 </p>
 
 <p>
 <%= link_to 'Back', posts_path %>
 </p>
+
+      </div>
+</div>
+
