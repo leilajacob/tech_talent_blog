@@ -1,12 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-  <div id="well" class="well">
-  <h4 id="welcome">Welcome, <%= current_user.username %>!</h4>
-  
+  <div id="well" class="well">  
   <% @posts.each do |post| %>
         <h2><%= post.title %></h2>
-        <p id="author"><%= post.user.email %></p>
+        <p id="author"><%= @post.user.username %></p>
+        <i class="fa fa-clock-o"><p>posted at <%= @post.created_at.strftime("%I:%M%p on %m/%d/%y")</p>
         <div class="well">
         <p><%= post.blog_entry[0...1000] %></p>
         <p id="more"><%= link_to 'READ MORE', post %></p>

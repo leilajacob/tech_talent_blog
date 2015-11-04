@@ -48,10 +48,6 @@ h2 {
 	text-align: center;
 }
 
-#well {
-	background-image: url("http://40.media.tumblr.com/52a662193fd692277f0f56790a454f68/tumblr_nwagz4XqW61txxec1o1_1280.jpg");
-}
-
 a:hover {
 	color: #F00D70;
 }
@@ -66,9 +62,13 @@ a:hover {
 }
 
 #background {
-	background-color: #7B7878;
+	background-image: url("http://40.media.tumblr.com/52a662193fd692277f0f56790a454f68/tumblr_nwagz4XqW61txxec1o1_1280.jpg");
 }
 
 .navbar .nav > li > a {
       padding:15px 10px 15px
     }
+
+.mtop-13 {
+	margin-top: 13px;
+}
